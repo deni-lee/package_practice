@@ -1,0 +1,32 @@
+{
+  "name": "test3",
+  "version": "1.0.0",
+  "description": "My groovy Nuxt.js project",
+  "author": "deni",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.26",
+    "@fortawesome/free-brands-svg-icons": "^5.12.0",
+    "@fortawesome/free-regular-svg-icons": "^5.12.0",
+    "@fortawesome/free-solid-svg-icons": "^5.12.0",
+    "@nuxtjs/axios": "^5.3.6",
+    "dotenv": "^8.2.0",
+    "js-cookie": "^2.2.1",
+    "moment": "^2.24.0",
+    "nuxt": "^2.0.0",
+    "nuxt-fontawesome": "^0.4.0",
+    "plyr": "^3.5.6",
+    "sweetalert2": "^9.5.3",
+    "vue-i18n": "^8.15.1",
+    "vue-plyr": "^6.0.4"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0"
+  }
+}

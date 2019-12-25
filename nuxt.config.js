@@ -25,11 +25,18 @@ export default {
     /*
      ** Global CSS
      */
-    css: ['plyr/dist/plyr.css'],
+    css: ['plyr/dist/plyr.css',
+        'swiper/dist/css/swiper.css'
+    ],
     /*
      ** Plugins to load before mounting the App
      */
-    plugins: [],
+    plugins: ['@/plugins/i18n.js',
+        '@/plugins/fontawesome.js',
+        '~/plugins/vue-plyr',
+        { src: '~/plugins/swiper.js', ssr: false },
+    ],
+
     /*
      ** Nuxt.js dev-modules
      */
@@ -76,10 +83,6 @@ export default {
         middleware: 'i18n'
     },
 
-    plugins: ['@/plugins/i18n.js',
-        '@/plugins/fontawesome.js',
-        '~/plugins/vue-plyr'
-    ],
 
     generate: {
         routes: ['/', '/about', '/cn', '/cn/about']

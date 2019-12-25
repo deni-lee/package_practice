@@ -8,6 +8,8 @@
   {{ time }}  <br>
   <button @click="kick">message</button>
 
+ <br>
+ 
   <vue-plyr style="width:700px;">
     <div class="plyr__video-embed">
       <iframe 
@@ -17,6 +19,14 @@
     </div>
   </vue-plyr>
 
+<br>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/bMhq9dXZ_jI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div>
+   <banner></banner>
+
+  </div>
+  
 </div>
 </template>
 
@@ -25,10 +35,15 @@ import axios from 'axios'
 import moment from 'moment'
 import swal from 'sweetalert2'
 
+import banner from '~/components/banner.vue'
+
 export default {
+  components:{
+    banner
+  },
   data(){
     return{
-      time:''
+      time:'',
     }
   },
     methods: {
